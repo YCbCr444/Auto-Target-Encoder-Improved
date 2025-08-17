@@ -74,7 +74,7 @@ The result is a set of sample points that are both evenly distributed throughout
 * **Configurable I/O:** Full control over output directories, custom file suffixes, and optional automatic deletion of source files upon success.
 
 <details>
-  <summary><strong>Disclaimer: ML Model Training & Fallback Behavior</strong> (Click to expand)</summary>
+  <summary><strong>❗ML Model Training & Fallback Behavior</strong> (Click to expand)</summary>
   
 ### How the Machine Learning Activates
 
@@ -192,7 +192,7 @@ Before you begin, ensure you have the following installed and accessible:
 3.  **Launch the Application**
     Run the `Auto Target Encoder` script.
     ```bash
-    python "Auto Target Encoder.py"
+    python "Auto Target Encoder.pyw"
     ```
 
 4.  **Configure Settings via the GUI**
@@ -220,4 +220,5 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 
 </div>
+
 
