@@ -2744,7 +2744,7 @@ def find_best_cq_optimized(input_path: str, task_id: int, log_callback, metrics:
                     if score_pred > target_score + tolerance:
                         # Quality too high, search higher CQ
                         search_min = predicted_cq + 1
-                        search_max = min(predicted_cq + 4, SETTINGS.cq_search_max)
+                        search_max = min(predicted_cq + 8, SETTINGS.cq_search_max)
                     else:
                         # Quality too low, search lower CQ
                         search_min = max(predicted_cq - 8, SETTINGS.cq_search_min)
@@ -6568,6 +6568,7 @@ def main ():
 
 if __name__ =="__main__":
     main ()
+
 
 
 
