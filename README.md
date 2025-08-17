@@ -176,7 +176,7 @@ Before you begin, ensure you have the following installed and accessible:
 
 * ✅ **Python 3.8+**: Make sure it's added to your system's PATH. ([Download](https://python.org/downloads/))
 * ✅ **FFmpeg**: The latest builds of `ffmpeg.exe` and `ffprobe.exe` are required. Full builds for Windows are available from [Gyan.dev](https://www.gyan.dev/ffmpeg/builds/).
-* ✅ **FFVShip (Optional)**: Required if you want to use the **SSIMULACRA2** or **Butteraugli** quality metrics. Requires compatible NVIDIA or AMD GPUs. You can find releases on the [FFVShip GitHub page](https://github.com/Not-That-Kind-Of-Developer/FFVShip/releases).
+* ✅ **FFVShip (Optional)**: Required if you want to use the **SSIMULACRA2** or **Butteraugli** quality metrics. Requires compatible NVIDIA or AMD GPUs. You can find releases on the [FFVShip GitHub page](https://github.com/Line-fr/Vship/releases).
 
 ### Installation & Configuration
 
@@ -220,5 +220,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 
 </div>
+
 
 
