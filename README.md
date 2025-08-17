@@ -32,7 +32,9 @@ This tool moves beyond single-file, trial-and-error encoding by building persist
 * **Comprehensive Settings Editor:** A user-friendly, tabbed window allows you to configure every aspect of the encoding process, from file paths and encoder settings to quality targets and sampling methods, with helpful tooltips for every option.
 * **Efficient Batch Management:** Built from the ground up for batch encoding. Scan entire directory trees, add hundreds of files to the queue, and let the application process them automatically. A dedicated "Completed" tab provides a detailed report of all finished jobs.
 
-![Live Demo of Auto Target Encoder](https://github.com/Snickrr/Auto-Target-Encoder/blob/main/demo.gif)
+<p align="center">
+  <img src="https://github.com/Snickrr/Auto-Target-Encoder/blob/main/demo.gif" alt="Live Demo of Auto Target Encoder">
+</p>
 
 ### 🎯 Advanced Quality Targeting
 
@@ -218,3 +220,4 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 
 </div>
+
