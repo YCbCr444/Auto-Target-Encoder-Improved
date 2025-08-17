@@ -1,4 +1,7 @@
 # Auto Target Encoder
+![License](https://img.shields.io/badge/license-MIT-green)
+![Python Version](https://img.shields.io/badge/python-3.8+-blue)
+![Windows](https://img.shields.io/badge/-Windows-0078D6?logo=windows&logoColor=white)
 
 **A sophisticated, GUI-based encoding tool designed for **automated batch processing** of your videos that do not require comprehensive fine-tuning. It leverages machine learning to create high-quality, efficient AV1 video encodes. This application automates the entire workflow for large batches of files: it learns from past encodes to predict optimal quality settings, intelligently analyzes each video's complexity, and displays the progress of all parallel jobs in a real-time dashboard.**
 
@@ -11,10 +14,6 @@ This tool moves beyond single-file, trial-and-error encoding by building persist
 </details>
 
 </div>
-
-![License](https://img.shields.io/badge/license-MIT-green)
-![Python Version](https://img.shields.io/badge/python-3.8+-blue)
-![Windows](https://img.shields.io/badge/-Windows-0078D6?logo=windows&logoColor=white)
 
 ---
 
@@ -41,6 +40,7 @@ This tool moves beyond single-file, trial-and-error encoding by building persist
 * **Intelligent Tiered Sampling:** A robust, three-stage analysis system ensures reliable results for any video type:
     * **Tier 1:** High-speed scene detection using FFmpeg.
     * **Tier 2:** "SmartFrames" analysis of keyframe density and temporal complexity.
+    * **Tier 3:** A fallback to evenly-spaced time intervals for low-complexity or unusual videos.
 <details>
   <summary><strong>What is "SmartFrames" sampling?</strong> (Click to expand)</summary>
   
@@ -56,7 +56,6 @@ It works in a four-step process:
 The result is a set of sample points that are both evenly distributed throughout the video's duration and representative of its most challenging moments. This leads to a more accurate and reliable quality assessment than just picking scenes at random or at fixed intervals.
 
 </details>
-    * **Tier 3:** A fallback to evenly-spaced time intervals for low-complexity or unusual videos.
 
 ### ⚙️ Powerful & Flexible Encoding
 
@@ -216,5 +215,6 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 <div align="center">
 
 **Star this repository if it helped you automate your encoding workflow! ⭐**
+
 
 </div>
