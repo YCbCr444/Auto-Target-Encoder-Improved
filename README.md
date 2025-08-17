@@ -142,10 +142,10 @@ Beyond the ML-to-traditional fallbacks, the script includes several other automa
 The script needs to select sample clips from every video for analysis, but not all videos are structured the same way. To handle this, it uses a tiered fallback system to guarantee a successful analysis every time.
 
 * **Attempt #1: Tier 1 (Scene Detection)**
-    The script first tries the fastest method: using FFmpeg to detect distinct scene changes. This is ideal for movies and TV shows. However, it can fail on content with very long, static shots like presentations or gameplay videos.
+    The script first tries FFmpeg to detect distinct scene changes.
 
 * **Attempt #2: Tier 2 (SmartFrames)**
-    If Tier 1 fails to find enough scene changes, the script **automatically falls back** to the more robust SmartFrames analysis. This method analyzes keyframe density and is more reliable, but slightly slower.
+    If Tier 1 fails to find enough scene changes, the script **automatically falls back** to the more robust SmartFrames analysis. This method analyzes keyframe density and is more reliable.
 
 * **Guaranteed Success: Tier 3 (Time Intervals)**
     If a video is highly unusual and even SmartFrames fails (e.g., a screen recording with no keyframes), the script **falls back a final time** to a foolproof method: selecting clips at simple, evenly-spaced intervals.
@@ -220,6 +220,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 
 </div>
+
 
 
 
