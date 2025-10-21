@@ -2356,9 +2356,13 @@ log_callback ,video_stream :Dict )->tuple [bytes ,float ]:
     filter_complex =";".join (filter_parts )+";"+concat_filter 
 
 
-    if SETTINGS .master_sample_encoder =='nvenc':
-        encoder_cmd =['-c:v','h264_nvenc','-preset','lossless','-qp','0']
-    elif SETTINGS .master_sample_encoder =='raw':
+    """"Temporary solution for 10bit 444p source video""""
+    if SETTINGS .master_sample_encoder =='nvenc' and '444p10' in pix_fmt_arg:
+        encoder_cmd =['-c:v','hevc_nvenc','-preset','lossless','-qp','0']
+    else :
+        encoder_cmd = ['-c:v','h264_nvenc','-preset','lossless','-qp','0']
+        
+    if SETTINGS .master_sample_encoder =='raw':
         encoder_cmd =['-c:v','rawvideo']
     else :
         encoder_cmd =['-c:v','libx264','-preset','ultrafast','-crf','0']
