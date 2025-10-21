@@ -2356,7 +2356,7 @@ log_callback ,video_stream :Dict )->tuple [bytes ,float ]:
     filter_complex =";".join (filter_parts )+";"+concat_filter 
 
 
-    """"Temporary solution for 10bit 444p source video""""
+    """Temporary solution for 10bit 444p source video"""
     if SETTINGS .master_sample_encoder =='nvenc' and '444p10' in pix_fmt_arg:
         encoder_cmd =['-c:v','hevc_nvenc','-preset','lossless','-qp','0']
     else :
@@ -6572,6 +6572,7 @@ def main ():
 
 if __name__ =="__main__":
     main ()
+
 
 
 
